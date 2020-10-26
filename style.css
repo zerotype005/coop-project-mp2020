@@ -48,28 +48,22 @@ img {
 }
 
 .navbar a:hover {
-  background: #ddd;
   color: black;
 }
 
 .nav-link {
   position: relative;
-  left: 470px;
+  left: 360px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .dropdown-menu {
   position: relative;
-  left: 470px;
+  left: 360px;
   margin-left: 20px;
   margin-right: 20px;
 }
-
-.imagelogo {
-  background-size: 200px;
-}
-
 .bg-transparent {
   background-color: transparent;
 }
