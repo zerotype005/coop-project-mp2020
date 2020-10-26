@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.nav-link {
+  position: relative;
+  left: 470px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dropdown-menu {
+  position: relative;
+  left: 470px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  top: 0;
+}
+
+.bg2 {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.maintext1 {
+  font-size: 10rem;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+/* .downarrow {
+  position: absolute;
+  top: 85%;
+  width: 100px;
+  right: 45%;
+  animation-name: moveup;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveup {
+  0% {
+    top: 85%;
+  }
+  25% {
+    top: 90%;
+  }
+  50% {
+    top: 85%;
+  }
+} */
+
+.scrolldown {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown span:nth-child(1) {
+  transform: translate(-10px, -10px);
+  animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2) {
+  transform: translate(5px, 5px);
+  animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3) {
+  transform: translate(20px, 20px);
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+.ptext1 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+
+.ptext2 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+.flowerhome {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 30%;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+}
+
+.one {
+  background: black;
+}
+
+.two {
+  background: #a3f3d3;
+}
+
+.three {
+  background: #0bbaa0;
+}
+
+.four {
+  background: #f7f302;
+}
+
+.wrapper {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.outer-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: ZTZuZu;
+  src: url(font/ZT\ ZuZu..!!.ttf);
+}
+
+.zuzuheader {
+  position: absolute;
+  top: 50px;
+  color: black;
+  font-family: ZTZuZu;
+  font-size: 250pt;
+  font-style: bold, italic;
+}
